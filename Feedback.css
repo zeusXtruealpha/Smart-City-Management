@@ -1,0 +1,127 @@
+/* Feedback Container */
+.feedback-container {
+  width: 60%;
+  margin: 30px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* Feedback Form Heading */
+h2 {
+  font-size: 24px;
+  color: white;
+  background: #1abc9c;
+  padding: 12px;
+  border-radius: 7px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  display: inline-block;
+  width: 95%;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Headings */
+h3 {
+  font-size: 20px;
+  color: #333;
+  margin-top: 20px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #1abc9c;
+  display: inline-block;
+  width: 100%;
+  background: #f8f9fa;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin: 12px 0;
+  font-weight: bold;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Dot Rating */
+.dot-rating {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.dot-rating span {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #ddd;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s ease-in-out;
+}
+
+.dot-rating span.selected {
+  background: #1abc9c;
+  transform: scale(1.2);
+}
+
+/* Buttons */
+button {
+  margin-top: 15px;
+  padding: 12px 25px;
+  border: none;
+  background-color: #1abc9c;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+button:hover {
+  background: #148f77;
+  transform: scale(1.05);
+}
+
+/* Spacing between buttons */
+button + button {
+  margin-left: 15px;
+}
+
+/* Popup Box */
+.popup-box {
+  background: #28a745;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border-radius: 6px;
+  margin: 10px 0;
+  font-weight: bold;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  animation: fadeInOut 3s ease-in-out;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
